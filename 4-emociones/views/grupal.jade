@@ -1,0 +1,20 @@
+html
+  head
+    title DEMO
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+  body
+    .container
+      .row
+        .col-md-4.text-center.center
+          img(src="#{imagen}" style='max-width: 90%;max-height:90%;margin-top:5%')
+        each thing in rec
+          .col-md-4
+            h2 Cara
+            p anger: #{thing.scores.anger}
+            p contempt: #{thing.scores.contempt}
+            p disgust: #{thing.scores.disgust}
+            p fear: #{thing.scores.fear}
+            p happiness: #{thing.scores.happiness}
+            p neutral: #{thing.scores.neutral}
+            p sadness: #{thing.scores.sadness}
+            p surprise: #{thing.scores.surprise}
